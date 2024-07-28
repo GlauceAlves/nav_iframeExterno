@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos iframe</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap');
+
+        @font-face {
+            font-family: 'Russo';
+            src: url('font/PlaywriteHRLijeva-VariableFont_wght.ttf') format('truetype');
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-size: 1em;
+        }
+
+        body {
+            text-align: center;
+            background-image: url('./imagens/wallpaper001.jpg');
+            width: 100vw;
+            height: 100vh;
+        }
+
+        h1 {
+            font-family: 'Playwrite AR';
+            font-size: 2em;
+            margin: 20px 0px;
+            padding: 10px;
+            display: inline-block;
+            /* background-color: rgba(255, 255, 255, 0.526); */
+        }
+
+        main {
+            text-align: center;
+
+        }
+
+        a {
+            text-decoration: none;
+            font-style: italic;
+        }
+
+        a:hover {
+            text-decoration: dashed;
+            color: white;
+        }
+
+        img {
+            display: inline-block;
+           
+        }
+
+        div.iframe-container {
+            background-color: white;
+            box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.470);
+            border-radius: 10px;
+            margin: 10px 10px;
+            display: inline-block;
+            width: 500px;
+            height: 600px;
+            justify-content: center;
+            position: relative;
+
+        }
+
+        div.iframe-container iframe {
+            position: absolute;
+            width: 100%;
+            border-radius: 0px, 0px, 10px 10px;
+            top: 7%;
+            height: calc(85%);
+            transform: translate(-50.0%, 0%);
+        }
+
+
+        div.iframe-container img {
+            position: absolute;
+            border-radius: 35px 30px;
+            width: 35px;
+            transform: translate(-600%, 12%);
+
+        }
+
+        h2 {
+            font-size: 1.2em;
+            padding: 10px;
+            background-color: rgb(246, 245, 244);
+            border-radius: 10px 10px 0px 0px;
+            width: 96%;
+        }
+
+        img {
+            border-radius: 35px 30px;
+            width: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>instagram</h1>
+    <img src="imagens/alfinete.png" alt="alfinete"> -->
+    <h1><a href="https://www.instagram.com/glaucecostaalves" target="_blank">Glauce Alvees</a></h1>
+    <main>
+        <div class="iframe-container">
+            <img src="imagens/alfinete.png" alt="alfinete">
+            <h2>Acesse o site da <a href="https://darkred-quail-279024.hostingersite.com/public/home.php"
+                    target="_blank"><strong> Lidia Gomes </strong></a></h2>
+
+            <!-- por mais que voce tenha configuraçoes no iframe vale as confuguraçoes do Css como soberana  -->
+            <!-- auto , yes mesmo que o conteudo couber vai aparecer a rolagem , no nao permite a rolagem   -->
+            <iframe src="https://darkred-quail-279024.hostingersite.com/public/home.php" frameborder="0" scolling="yes">
+                Não foi possivel carregar a informaçao, clique em Lidia Gomes para
+                visualizar</iframe>
+        </div>
+        <!-- ou o testo aparecer dentro do frame  -->
+        <div class="iframe-container">
+            <img src="imagens/alfinete.png" alt="alfinete">
+            <h2>Androide em repositorio da Glauce Alves</h2>
+            <iframe src="https://glaucealves.github.io/android/" frameborder="0"><a href="https://glaucealves.github.io"
+                    target="_blank" scolling="yes"> Glauce Alves GitHub</a></iframe>
+        </div>
+
+        <div class="iframe-container">
+            <img src="imagens/alfinete.png" alt="alfinete">
+            <h2>Cordel em repositorio da Glauce Alves</h2>
+            <iframe src="https://glaucealves.github.io/cordel_moderno/" frameborder="0"><a
+                    href="https://glaucealves.github.io" target="_blank" scolling="yes"> Glauce Alves
+                    GitHub</a></iframe>
+        </div>
+    </main>
+
+</body>
+
+</html>
